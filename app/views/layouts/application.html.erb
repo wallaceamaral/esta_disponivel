@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="rubyJobs">
+<head>
+  <title>Está Disponível? | Vagas para Artistas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+  <%= analytics_init if Rails.env.production? %>
+  <%= auto_discovery_link_tag :atom, "/feed" %>
+  <%= auto_discovery_link_tag :rss, "/feed.rss" %>
+
+  <%= favicon_link_tag 'ruby.png' %>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <%= yield :opengraph %>
+
+</head>
+<body id="<%= controller_action %>">
+  <%= render 'layouts/navbar' %>
+  <%= yield %>
+  <%= render "layouts/footer" %>
+</body>
+</html>

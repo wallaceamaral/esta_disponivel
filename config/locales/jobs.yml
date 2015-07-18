@@ -1,0 +1,37 @@
+pt-BR:
+  activerecord:
+    errors:
+      models:
+        job:
+          attributes:
+            website:
+              invalid: "Formato inválido. Exemplo de formato permitido: http://www.nomedosite.com"
+
+  simple_form:
+    labels:
+      job:
+        title: "Título da vaga"
+        company: "Agência ou Produtor"
+        website: "Site da agência"
+        modality: "Qual é a modalidade de trabalho?"
+        location: "Localização"
+        email: "E-mail para contato"
+        url: "Link para contato (quando preenchido, os candidatos serão encaminhados para este endereço)"
+        skills: "Habilidades/Requerimentos"
+        description: "Descrição (quanto mais informações, maiores são as chances de encontrar o profissional ideal :D )"
+        salary: "Cache"
+        contract_type: "Tipo de Contratação"
+    placeholders:
+      job:
+        title: "Modelo para comercial"
+        company: "Agência Está Disponível? S/A"
+        location: 'São Paulo - SP'
+        email: 'contato@agencia.com'
+        url: "http://www.seusite.com.br/sua_vaga"
+        website: 'http://www.seusite.com.br'
+        skills: 'Necessário ter experiência com: Ruby, Ruby on Rails ou outro framework MVC.  Desejável: APIs REST, Test Driven Development, MongoDB e GIT'
+        description: "DESCRIÇÃO: \n casting para atores em um comercial \nPERFIL: \n ator com DRT \nQUANDO: \n gravação sexta que vem \nONDE: \n parque ibirapuera - São Paulo"
+
+    include_blanks:
+      user:
+        age: "Rather not say"
